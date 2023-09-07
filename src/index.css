@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(224, 222, 222);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/public/images/blob-scene-haikei.svg");
+  background-size: cover;
+  background-attachment: fixed;
+}
