@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
-export const CardWrapper = styled.div`
-  background-color: aliceblue;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
+export const CardsWrapper = styled.div`
   display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
   justify-content: center;
-  align-items: center;
+  margin-top: 4rem;
 
-  &:nth-child(2) {
-    margin-top: 2rem;
-  }
-  &:nth-child(3) {
-    margin-top: 4rem;
-  }
-
-  a {
-    color: black;
+  .repoCard {
+    background-color: #272525;
+    color: darkgray;
+    margin: 10px;
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
   }
 `;

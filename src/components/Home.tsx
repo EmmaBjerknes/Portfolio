@@ -1,5 +1,5 @@
 import BorderSvg from "./BorderSvg";
-import { CardWrapper } from "./styles/Card.styled";
+import { NavButton } from "./styles/NavButton.styled";
 import { StyledHomeWrapper } from "./styles/StylesHome";
 import { Link } from "react-scroll";
 
@@ -26,7 +26,7 @@ function Home() {
       </div>
       <div style={{ marginTop: "1rem" }}>
         <nav style={{ display: "flex", justifyContent: "space-between" }}>
-          <CardWrapper>
+          <NavButton>
             <Link
               to="skills"
               spy={true}
@@ -36,8 +36,8 @@ function Home() {
             >
               SKILLS
             </Link>
-          </CardWrapper>
-          <CardWrapper>
+          </NavButton>
+          <NavButton>
             <Link
               to="portfolio"
               spy={true}
@@ -47,8 +47,8 @@ function Home() {
             >
               PORTFOLIO
             </Link>
-          </CardWrapper>
-          <CardWrapper>
+          </NavButton>
+          <NavButton>
             <Link
               to="contact"
               spy={true}
@@ -58,7 +58,7 @@ function Home() {
             >
               CONTACT
             </Link>
-          </CardWrapper>
+          </NavButton>
         </nav>
       </div>
     </StyledHomeWrapper>
