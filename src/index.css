@@ -12,4 +12,5 @@ body {
   background-image: url("/public/images/blob-scene-haikei.svg");
   background-size: cover;
   background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
 }

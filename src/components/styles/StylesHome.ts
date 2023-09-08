@@ -5,7 +5,7 @@ export const StyledHomeWrapper = styled.div`
   padding: 1rem;
   height: 100vh;
 
-  img {
+  .profileImg {
     height: 120px;
     width: 120px;
     outline-offset: 0.2rem;
@@ -14,26 +14,24 @@ export const StyledHomeWrapper = styled.div`
     margin-bottom: 2rem;
   }
 
-  & > div {
-    margin: 3rem 0;
-  }
-
   .mirrored{
-    transform: scaleX(-1);
+    transform: rotate(180deg)
   }
 
   .infoBox {
     position: relative;
-    height: 100px;
   }
 
   article {
     position: absolute;
-    top: 8px;
-    left: 8px;
+    inset: 8px;
     background: #000c16;
     border-radius: 10px;
     z-index: 2;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 `;

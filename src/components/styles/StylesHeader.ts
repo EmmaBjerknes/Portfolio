@@ -9,7 +9,7 @@ export const StyledHeaderWrapper = styled.header`
     left: 0;
     right: 0;
     padding: 1rem;
-
+    z-index: 5;
     h1{
         font-family: 'Satisfy', cursive;
         font-size: 2.5rem;

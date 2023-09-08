@@ -4,8 +4,7 @@ function BorderSvg() {
       <svg
         data-name="corner-top-left"
         xmlns="http://www.w3.org/2000/svg"
-        data-inlinesvg=".inlineSvgFile-1"
-        style={{ width: "100px", height: "100px" }}
+        style={{ width: "80px", height: "80px" }}
       >
         <defs>
           <linearGradient id="grad1" x1="-15%" y1="15%" x2="40%" y2="75%">

@@ -8,7 +8,6 @@ export const CardWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(10px);
 
   &:nth-child(2) {
     margin-top: 2rem;
