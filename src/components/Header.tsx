@@ -1,12 +1,18 @@
+import { useEffect } from "react";
 import { StyledHeaderWrapper } from "./styles/StylesHeader";
-import { Link } from "react-scroll";
+import { scrollToSection, setupScrollListeners } from "./helpers/scrollNavigation";
 
 function Header() {
+  useEffect(() => {
+    const cleanUp = setupScrollListeners();
+    return cleanUp;
+  }, []);
+
   return (
     <StyledHeaderWrapper>
-      <Link to="home" spy={true} smooth={true} offset={-100} duration={500}>
+      <a id="home-link" href="#" onClick={()=>scrollToSection("home")}>
         <h1>Emma Bjerknes</h1>
-      </Link>
+      </a>
     </StyledHeaderWrapper>
   );
 }

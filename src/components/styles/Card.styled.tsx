@@ -5,7 +5,6 @@ export const CardsWrapper = styled.div`
   flex-flow: row wrap;
   gap: 2rem;
   justify-content: center;
-  margin-top: 4rem;
 
   .repoCard {
     background-color: #272525;

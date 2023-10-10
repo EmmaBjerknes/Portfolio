@@ -6,11 +6,26 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("/public/images/blob-scene-haikei.svg");
+  background-image: url("/images/blob-scene-haikei.svg");
   background-size: cover;
   background-attachment: fixed;
   font-family: "Roboto", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.scroll-container {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; 
+  max-height: 100vh;
+}
+
+@media (min-width: 769px) {
+  body {
+    background-image: url("/images/blob-scene-haikei-big.svg");
+  }
 }

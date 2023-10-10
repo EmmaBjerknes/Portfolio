@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
 export const StyledHomeWrapper = styled.div`
-  margin-top: 4rem;
-  padding: 1rem;
-  height: 100vh;
 
   .profileImg {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     outline-offset: 0.2rem;
     background-color: lightgray;
     border-radius: 50%;
