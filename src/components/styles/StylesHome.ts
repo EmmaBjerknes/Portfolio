@@ -49,6 +49,9 @@ export const StyledHomeWrapper = styled.div`
     a {
       display: flex;
       align-items: center;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 `;

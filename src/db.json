@@ -1,14 +1,17 @@
 {"projects":[{
-    "url": "fake",
-    "name": "PoxeDex",
-    "status": "done"
+    "url": "https://github.com/EmmaBjerknes/Punk-Api",
+    "name": "Punk-API",
+    "status": "done",
+    "description": "Discover beer and food pairings with ease on this project. Get dish recommendations, explore Brewdog's DIY Dog beer selection, and create your beer list. The site is powered by TypeScript, HTML, Sass, and AJAX, with data sourced from the Punk API."
 },{
     "url": "fake",
     "name": "herpderp",
-    "status": "in progress"
+    "status": "in progress",
+    "description": ""
 },{
     "url": "fake",
     "name": "derpmerp",
-    "status": "comming"
+    "status": "comming",
+    "description": ""
 }
 ]}
