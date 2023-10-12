@@ -1,5 +1,4 @@
 import BorderSvg from "./BorderSvg";
-import { NavButton } from "./styles/NavButton.styled";
 import { StyledHomeWrapper } from "./styles/StylesHome";
 import { ContentWrapper } from "./styles/ContentWrapper.styled";
 import {
@@ -7,6 +6,7 @@ import {
   scrollToSection,
 } from "./helpers/scrollNavigation";
 import { useEffect } from "react";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 function Home() {
   useEffect(() => {
@@ -33,27 +33,27 @@ function Home() {
           </div>
         </div>
 
-        <div style={{ marginTop: "1rem" }}>
-          <nav style={{ display: "flex", justifyContent: "space-between" }}>
-            <NavButton>
-              <a
-                id="portfolio-link"
-                href="#"
-                onClick={() => scrollToSection("portfolio")}
-              >
-                see my projects
-              </a>
-            </NavButton>
-            <NavButton>
-              <a
-                id="contact-link"
-                href="#"
-                onClick={() => scrollToSection("contact")}
-              >
-                contact me
-              </a>
-            </NavButton>
-          </nav>
+        <div className="navContainer">
+          <div className="navItem">
+            <a
+              id="portfolio-link"
+              href="#"
+              onClick={() => scrollToSection("portfolio")}
+            >
+              <KeyboardArrowRightIcon />
+              see my projects
+            </a>
+          </div>
+          <div className="navItem">
+            <a
+              id="contact-link"
+              href="#"
+              onClick={() => scrollToSection("contact")}
+            >
+              <KeyboardArrowRightIcon />
+              contact me
+            </a>
+          </div>
         </div>
       </StyledHomeWrapper>
     </ContentWrapper>

@@ -3,7 +3,13 @@ import styled from "styled-components";
 export const StyledHomeWrapper = styled.div`
   display: grid;
   grid-template-rows: repeat(3, auto);
-  gap: 2rem;
+  gap: 4rem;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 50%;
+  }
 
   .profileImg {
     height: 120px;
@@ -29,10 +35,20 @@ export const StyledHomeWrapper = styled.div`
     background: #000c16;
     border-radius: 10px;
     z-index: 2;
-    padding: 10px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     text-align: center;
+    gap: 10px;
+  }
+
+  .navContainer {
+    display: flex;
+    justify-content: space-around;
+    a {
+      display: flex;
+      align-items: center;
+    }
   }
 `;
