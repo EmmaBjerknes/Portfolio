@@ -1,18 +1,22 @@
 import styled from "styled-components";
 
 export const StyledHomeWrapper = styled.div`
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 2rem;
 
   .profileImg {
-    height: 100px;
-    width: 100px;
-    outline-offset: 0.2rem;
-    background-color: lightgray;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
     border-radius: 50%;
-    margin-bottom: 2rem;
   }
 
-  .mirrored{
-    transform: rotate(180deg)
+  .mirrored {
+    transform: rotate(180deg);
   }
 
   .infoBox {
