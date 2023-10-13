@@ -32,7 +32,7 @@ export const StyledHomeWrapper = styled.div`
   article {
     position: absolute;
     inset: 8px;
-    background: #000c16;
+    background: #001220;
     border-radius: 10px;
     z-index: 2;
     padding: 0 10px;

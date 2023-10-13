@@ -1,17 +1,36 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { StyledHeaderWrapper } from "./styles/StylesHeader";
-import { scrollToSection, setupScrollListeners } from "./helpers/scrollNavigation";
+import {
+  scrollToSection,
+  setupScrollListeners,
+} from "./helpers/scrollNavigation";
 
 function Header() {
+  const [isClicked, setIsClicked] = useState(false);
+
   useEffect(() => {
     const cleanUp = setupScrollListeners();
     return cleanUp;
   }, []);
 
+  const handleClick = () => {
+    scrollToSection("home");
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 1000);
+  };
+
   return (
     <StyledHeaderWrapper>
-      <a id="home-link" href="#" onClick={()=>scrollToSection("home")}>
-        <h1>Emma Bjerknes</h1>
+      <a>
+        <h1
+          id="home-link"
+          className={isClicked ? "clicked" : ""}
+          onClick={handleClick}
+        >
+          Emma Bjerknes
+        </h1>
       </a>
     </StyledHeaderWrapper>
   );

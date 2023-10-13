@@ -10,10 +10,11 @@ export const StyledFooterWrapper = styled.footer`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 20px;
 
   img {
     width: auto;
     height: 1.5rem;
-    margin-left: 1rem; 
+    margin-left: 1rem;
   }
 `;
