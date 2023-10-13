@@ -20,6 +20,7 @@ export const StyledHeaderWrapper = styled.header`
     &.clicked {
       animation: clicked 0.5s linear forwards;
       background-image: linear-gradient(45deg, #683a67, #fbae3c, #683a67);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color: transparent;

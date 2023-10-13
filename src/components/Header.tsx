@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { StyledHeaderWrapper } from "./styles/StylesHeader";
+import { StyledHeaderWrapper } from "./styles/HeaderStyles";
 import {
   scrollToSection,
   setupScrollListeners,

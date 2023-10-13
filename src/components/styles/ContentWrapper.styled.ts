@@ -12,6 +12,7 @@ export const ContentWrapper = styled.div`
     &:hover {
       animation: clicked 2s infinite;
       background-image: linear-gradient(45deg, #683a67, #fbae3c, #683a67);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color: transparent;

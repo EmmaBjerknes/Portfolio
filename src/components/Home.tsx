@@ -1,5 +1,5 @@
 import BorderSvg from "./BorderSvg";
-import { StyledHomeWrapper } from "./styles/StylesHome";
+import { StyledHomeWrapper } from "./styles/HomeWrapper.styled";
 import { ContentWrapper } from "./styles/ContentWrapper.styled";
 import {
   setupScrollListeners,

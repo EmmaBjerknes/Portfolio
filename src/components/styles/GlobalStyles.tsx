@@ -1,3 +1,7 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyles = createGlobalStyle`
+
 * {
   margin: 0;
   padding: 0;
@@ -29,3 +33,5 @@ a{
     background-image: url("/images/blob-scene-haikei-big.svg");
   }
 }
+`;
+export default GlobalStyles;

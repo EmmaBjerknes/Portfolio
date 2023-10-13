@@ -1,4 +1,4 @@
-import { StyledFooterWrapper } from "./styles/StylesFooter";
+import { StyledFooterWrapper } from "./styles/FooterStyles";
 
 function Footer() {
   return (

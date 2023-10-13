@@ -3,11 +3,13 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
+import GlobalStyles from "./components/styles/GlobalStyles";
 
 function App() {
   return (
     <>
-      <div className="scroll-container" >
+      <GlobalStyles />
+      <div className="scroll-container">
         <Header />
         <Home />
         <Portfolio />
