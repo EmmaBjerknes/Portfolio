@@ -1,6 +1,6 @@
 import { ContentWrapper } from "./styles/ContentWrapper.styled";
 import { projects } from "../db.json";
-import { CardsWrapper } from "./styles/Card.styled";
+import { CardsWrapper, StyledRepoCard } from "./styles/Card.styled";
 import { RepoLinks } from "./styles/Buttons.styled";
 
 interface Project {
@@ -33,10 +33,10 @@ function Portfolio() {
       <ContentWrapper id="portfolio">
         <CardsWrapper>
           {projects.map((project, index) => (
-            <div className={`projectCard repoCard${index}`} key={index}>
+            <StyledRepoCard className={` repoCard${index}`} key={index}>
               <h3>{project.name}</h3>
               <RepoLinks>{projectStatus(project)}</RepoLinks>
-            </div>
+            </StyledRepoCard>
           ))}
         </CardsWrapper>
       </ContentWrapper>

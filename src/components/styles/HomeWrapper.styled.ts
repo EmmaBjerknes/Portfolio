@@ -46,6 +46,7 @@ export const StyledHomeWrapper = styled.div`
   .navContainer {
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
     a {
       display: flex;
       align-items: center;

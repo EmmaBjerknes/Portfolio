@@ -41,6 +41,12 @@ function Home() {
             </a>
           </div>
           <div className="navItem">
+            <a id="portfolio-link" onClick={() => scrollToSection("about")}>
+              <KeyboardArrowRightIcon />
+              about me
+            </a>
+          </div>
+          <div className="navItem">
             <a id="contact-link" onClick={() => scrollToSection("contact")}>
               <KeyboardArrowRightIcon />
               contact me
