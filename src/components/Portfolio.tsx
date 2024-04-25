@@ -13,7 +13,7 @@ interface Project {
 
 function Portfolio() {
   const projectStatus = (project: Project) => {
-    if (project.status !== "done") {
+    if (project.status === "coming") {
       return <p>{project.status}</p>;
     } else {
       return (
@@ -21,9 +21,11 @@ function Portfolio() {
           <a href={project.url} target="_blank" rel="noopener noreferrer">
             Github
           </a>
-          <a href={project.site} target="_blank" rel="noopener noreferrer">
-            Site
-          </a>
+          {project.site && (
+            <a href={project.site} target="_blank" rel="noopener noreferrer">
+              Site
+            </a>
+          )}
         </>
       );
     }
